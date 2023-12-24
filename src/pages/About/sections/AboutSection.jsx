@@ -1,4 +1,4 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FaFileLines, FaCircleRight } from 'react-icons/fa6';
 
 const AboutSection = () => {
   return (
@@ -25,20 +25,19 @@ const AboutSection = () => {
               </a>
               .
             </div>
-            <div className='mb-4'>
-              <a className='btn btn-primary me-2 mb-3' href='portfolio.html'>
-                {/* <i className='fas fa-arrow-alt-circle-right me-2'></i> */}
-                <FontAwesomeIcon
-                  icon='fa-solid fa-circle-right'
-                  className='me-2'
-                />
+            <div className='mb-4 d-flex'>
+              <a
+                className='btn btn-primary me-2 mb-3 d-flex justify-content-center align-items-center'
+                href='portfolio.html'
+              >
+                <FaCircleRight className='me-2' />
                 <span className='d-none d-md-inline'>View</span> Portfolio
               </a>
-              <a className='btn btn-secondary mb-3' href='resume.html'>
-                <FontAwesomeIcon
-                  icon='fa-solid fa-file-lines'
-                  className='me-2'
-                />
+              <a
+                className='btn btn-secondary mb-3 d-flex justify-content-center align-items-center'
+                href='resume.html'
+              >
+                <FaFileLines className='me-2' />
                 <span className='d-none d-md-inline'>View</span> Resume
               </a>
             </div>

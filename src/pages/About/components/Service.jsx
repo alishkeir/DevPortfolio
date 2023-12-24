@@ -1,13 +1,13 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FaReact, FaSass, FaSquareJs } from 'react-icons/fa6';
 
 const Service = () => {
   return (
     <div className='item col-6 col-xl-4'>
       <div className='item-inner'>
         <div className='item-icon'>
-          <FontAwesomeIcon icon='fa-brands fa-square-js' />
-          <FontAwesomeIcon icon='fa-brands fa-react' />
-          <FontAwesomeIcon icon='fa-brands fa-sass' />
+          <FaSquareJs />
+          <FaReact />
+          <FaSass />
         </div>
         <h3 className='item-title'>Vanilla JavaScript</h3>
         <div className='item-desc'>
