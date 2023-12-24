@@ -13,7 +13,7 @@ const NotFoundPage = () => {
         </span>
         4
       </div>
-      <p className='subtitle'>What on Earth are you donig here !?</p>
+      <p className='subtitle'>What on Earth are you doing here !?</p>
       <p className='description'>
         Well, this is awkward, the page you were trying to view does not exist.
       </p>
