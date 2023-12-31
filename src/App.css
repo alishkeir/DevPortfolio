@@ -941,9 +941,9 @@ textarea.form-control {
   font-size: 1.5rem;
   font-weight: 300;
 }
-.overview-section .item {
+/* .overview-section .item {
   margin-bottom: 2rem;
-}
+} */
 .overview-section .item-desc {
   color: #4f4f4f;
   font-size: 0.875rem;

@@ -1,0 +1,44 @@
+{
+  "services": [
+    {
+      "title": "HTML, CSS & JS",
+      "description": "I specialize in creating captivating web experiences using HTML, CSS, and JavaScript. These foundational technologies enable me to build dynamic and responsive websites with a focus on user engagement.",
+      "icons": ["FaHtml5", "FaCss3Alt", "FaSquareJs"]
+    },
+    {
+      "title": "Sass, Bootstrap, and Tailwind",
+      "description": "Mastering Sass, Bootstrap, and Tailwind, I sculpt stylish and responsive frontend designs. These tools streamline CSS, providing a solid foundation for creating visually appealing and functional user interfaces.",
+      "icons": ["FaSass", "FaBootstrap", "SiTailwindcss"]
+    },
+    {
+      "title": "React, Vue and Angular",
+      "description": "I excel in frontend development, leveraging the power of popular frameworks like React, Vue, and Angular. With expertise in these technologies, I bring dynamic and interactive user interfaces to life, ensuring a seamless and engaging user experience.",
+      "icons": ["FaReact", "FaVuejs", "FaAngular"]
+    },
+    {
+      "title": "Frontend",
+      "description": "",
+      "image": ""
+    },
+    {
+      "title": "Frontend",
+      "description": "",
+      "image": ""
+    },
+    {
+      "title": "Frontend",
+      "description": "",
+      "image": ""
+    },
+    {
+      "title": "Frontend",
+      "description": "",
+      "image": ""
+    },
+    {
+      "title": "Frontend",
+      "description": "",
+      "image": ""
+    }
+  ]
+}
