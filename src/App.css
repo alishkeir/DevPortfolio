@@ -780,11 +780,12 @@ textarea.form-control {
 .social-list a {
   width: 32px;
   height: 32px;
-  padding-top: 5px;
-  display: inline-block;
   text-align: center;
   border-radius: 50%;
   background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .social-list a:hover,
 .social-list a:focus {
@@ -1076,13 +1077,6 @@ textarea.form-control {
   position: relative;
   height: 100%;
 }
-.project-card:hover .link-mask {
-  visibility: visible;
-  background: rgba(41, 41, 41, 0.4);
-}
-.project-card:hover .link-mask-text {
-  display: block;
-}
 .project-card .card-img {
   border-radius: 0;
 }
@@ -1092,49 +1086,17 @@ textarea.form-control {
 .project-card .card-text {
   font-size: 0.875rem;
 }
+
+.project-card .card-text-links a {
+  font-size: 1rem;
+  text-decoration: none;
+}
 .project-card .card-img-holder {
   max-height: 200px;
   overflow: hidden;
   vertical-align: middle;
 }
-.project-card .link-mask {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  visibility: hidden;
-  transition: all 0.4s ease-in-out;
-}
-@media (prefers-reduced-motion: reduce) {
-  .project-card .link-mask {
-    transition: none;
-  }
-}
-.project-card .link-mask .link-mask-link {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-.project-card .link-mask-text {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  vertical-align: middle;
-  color: #fff;
-  display: none;
-}
-.project-card .link-mask-text .btn {
-  top: 50%;
-  margin-top: -20px;
-  position: relative;
-}
+
 .blog-post-card {
   background: #fafafa;
   border: 1px solid rgba(0, 0, 0, 0.025);
@@ -1650,9 +1612,7 @@ a.resume-link:hover {
   .header .nav-item .dropdown-menu .dropdown-item {
     padding-left: 1.875rem;
   }
-  .link-mask {
-    display: none !important;
-  }
+
   .mobile-is-hidden {
     display: none;
   }
@@ -1784,6 +1744,7 @@ body.dark-mode .header .btn-primary {
 }
 body.dark-mode .social-list a {
   background: #6c51a4;
+  color: #fff;
 }
 body.dark-mode .social-list a .svg-inline--fa {
   color: #fff;
@@ -1810,9 +1771,7 @@ body.dark-mode .project-card {
   background: #151e29;
   border: none;
 }
-body.dark-mode .project-card:hover .link-mask {
-  background: rgba(0, 0, 0, 0.5);
-}
+
 body.dark-mode .blog-post-card {
   background: #151e29;
   border: none;
@@ -1893,6 +1852,8 @@ body.dark-mode .testiomonial-carousel-container .tns-nav button.tns-nav-active,
 body.dark-mode .testiomonial-carousel-container .tns-nav button:hover {
   background: rgba(255, 255, 255, 0.95);
 }
+
+/* ========================= */
 body {
   overflow-x: hidden;
 }

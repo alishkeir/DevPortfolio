@@ -23,7 +23,7 @@ const AboutPage = () => {
 
       <FeaturedSection />
 
-      <Separator />
+      {/* <Separator /> */}
 
       {/* <BlogsSection /> */}
     </>

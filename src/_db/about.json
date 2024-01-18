@@ -1,44 +1,88 @@
 {
   "services": [
     {
-      "title": "HTML, CSS & JS",
-      "description": "I specialize in creating captivating web experiences using HTML, CSS, and JavaScript. These foundational technologies enable me to build dynamic and responsive websites with a focus on user engagement.",
-      "icons": ["FaHtml5", "FaCss3Alt", "FaSquareJs"]
+      "title": "HTML & CSS",
+      "description": "At the core of my web development expertise lies mastery in HTML and CSS. With precision in these languages, I design and structure web pages, ensuring not only visual appeal but also a seamless and intuitive user experience.",
+      "icons": ["FaHtml5", "FaCss3Alt"]
     },
     {
-      "title": "Sass, Bootstrap, and Tailwind",
+      "title": "Vanilla JavaScript",
+      "description": "I possess expertise in Vanilla JavaScript, utilizing the language in its pure form to develop dynamic and interactive web applications. With a focus on clean and efficient code, I ensure a robust and seamless user experience across various platforms.",
+      "icons": ["FaSquareJs"]
+    },
+    {
+      "title": "Sass, Bootstrap, & Tailwind",
       "description": "Mastering Sass, Bootstrap, and Tailwind, I sculpt stylish and responsive frontend designs. These tools streamline CSS, providing a solid foundation for creating visually appealing and functional user interfaces.",
       "icons": ["FaSass", "FaBootstrap", "SiTailwindcss"]
     },
     {
-      "title": "React, Vue and Angular",
+      "title": "React, Vue & Angular",
       "description": "I excel in frontend development, leveraging the power of popular frameworks like React, Vue, and Angular. With expertise in these technologies, I bring dynamic and interactive user interfaces to life, ensuring a seamless and engaging user experience.",
       "icons": ["FaReact", "FaVuejs", "FaAngular"]
     },
     {
-      "title": "Frontend",
-      "description": "",
-      "image": ""
+      "title": "React Native",
+      "description": "I specialize in mobile app development, harnessing the power of React Native. With this framework, I create cross-platform applications that seamlessly run on both iOS and Android, ensuring a consistent and efficient user experience across devices.",
+      "icons": ["FaReact"]
     },
     {
-      "title": "Frontend",
-      "description": "",
-      "image": ""
+      "title": "Node, Express & Nest",
+      "description": "Specializing in backend development, I leverage Node.js, Express, and Nest frameworks to create efficient, scalable systems tailored to diverse project requirements with precision and expertise.",
+      "icons": ["FaNodeJs", "SiExpress", "SiNestjs"]
     },
     {
-      "title": "Frontend",
-      "description": "",
-      "image": ""
+      "title": "MySQL, MongoDB & Firebase",
+      "description": "I specialize in database management, adeptly working with MySQL, MongoDB, and Firebase. Leveraging these technologies, I ensure efficient and secure data storage, retrieval, and management, tailored to the specific needs of each project.",
+      "icons": ["SiMysql", "SiMongodb", "SiFirebase"]
     },
     {
-      "title": "Frontend",
-      "description": "",
-      "image": ""
+      "title": "PHP & Laravel",
+      "description": "My expertise lies in PHP and Laravel, where I specialize in creating robust and scalable web applications. With a focus on efficient server-side scripting and Laravel's powerful framework, I ensure the development of high-quality, tailored solutions for diverse project needs.",
+      "icons": ["FaPhp", "FaLaravel"]
     },
     {
-      "title": "Frontend",
-      "description": "",
-      "image": ""
+      "title": "WordPress",
+      "description": "I specialize in developing custom WordPress themes and plugins, tailoring solutions to meet specific project requirements. With a focus on design and functionality, I ensure seamless integration and a personalized user experience for each WordPress project.",
+      "icons": ["FaWordpress"]
+    }
+  ],
+
+  "projects": [
+    {
+      "title": "Weather App",
+      "description": "Experience weather at your fingertips with our React-based Weather App oowered by the OpenWeatherMap API.",
+      "image": "https://alishkeir.sirv.com/Portfolio%20CDN%20Images/scrnli_18_01_2024_02-03-37.png",
+      "featured": true,
+      "github": "https://github.com/alishkeir/WeatherApp",
+      "demo": "https://app.netlify.com/sites/weather-app-alishkeir",
+      "type": "frontend"
+    },
+    {
+      "title": "GitHub API",
+      "description": "A React project using GitHub API and GraphQL enables users to search and display GitHub repositories.",
+      "image": "https://alishkeir.sirv.com/Portfolio%20CDN%20Images/scrnli_18_01_2024_02-04-48.png",
+      "featured": true,
+      "github": "https://github.com/alishkeir/GitHubAPI",
+      "demo": "https://github-api-alishkeir.netlify.app/",
+      "type": "frontend"
+    },
+    {
+      "title": "Task Manager",
+      "description": " This Todo List app, designed for self-organization, is built using React, and incorporates JWT for authentication and authorization.",
+      "image": "https://alishkeir.sirv.com/Portfolio%20CDN%20Images/scrnli_18_01_2024_02-05-57.png",
+      "featured": true,
+      "github": "https://github.com/alishkeir/TaskManagerFrontend",
+      "demo": "https://task-manager-alishkeir.netlify.app/",
+      "type": "frontend"
+    },
+    {
+      "title": "QR Code Generator",
+      "description": " Effortlessly create personalized QR codes with this streamlined JavaScript tool. Input your text, hit generate, and get your QR code instantly.",
+      "image": "https://alishkeir.sirv.com/Portfolio%20CDN%20Images/scrnli_18_01_2024_02-22-16.png",
+      "featured": true,
+      "github": "https://github.com/alishkeir/QRCodeGenerator",
+      "demo": "https://qr-code-generator-alishkeir.netlify.app/",
+      "type": "frontend"
     }
   ]
 }

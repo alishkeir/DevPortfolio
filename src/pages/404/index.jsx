@@ -1,4 +1,5 @@
-import '@assets/css/404.css';
+import '@assets/css/404.scss';
+import '@assets/css/about.scss';
 import { Link } from 'react-router-dom';
 
 import NotFoundLogo from '@assets/img/404.gif';

@@ -1,26 +1,50 @@
+import { useEffect, useState } from 'react';
 import {
   FaBlog,
-  FaBriefcase,
   FaCodepen,
+  FaEnvelope,
   FaEnvelopeOpenText,
   FaFileLines,
   FaGithub,
+  FaInstagram,
   FaLaptopCode,
   FaLinkedinIn,
   FaPaperPlane,
-  FaStackOverflow,
   FaSun,
-  FaTwitter,
   FaUser,
 } from 'react-icons/fa6';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
+  const [darkMode, setDarkMode] = useState(
+    localStorage.getItem('dark_mode') == 'true'
+  );
+
+  useEffect(() => {
+    if (localStorage.getItem('dark_mode')) {
+      document.body.classList.add('dark-mode');
+      setDarkMode(true);
+    }
+  }, [darkMode]);
+
+  const toggleTheme = (e) => {
+    setDarkMode(e.target.checked);
+
+    if (e.target.checked) {
+      document.body.classList.add('dark-mode');
+      localStorage.setItem('dark_mode', true);
+    } else {
+      document.body.classList.remove('dark-mode');
+      localStorage.removeItem('dark_mode');
+    }
+  };
+
   return (
     <header className='header text-center'>
       <div className='force-overflow'>
         <h1 className='blog-name pt-lg-4 mb-0'>
           <a className='no-text-decoration' href='index.html'>
-            Simon Doe
+            Ali Shokair
           </a>
         </h1>
 
@@ -41,38 +65,54 @@ const Header = () => {
             <div className='profile-section pt-3 pt-lg-0'>
               <img
                 className='profile-image mb-3 rounded-circle mx-auto'
-                src='assets/images/profile.png'
-                alt='image'
+                src='https://gravatar.com/userimage/183874599/53d05717042f75520286f0d8d1479bcc.jpeg?size=256'
+                alt='Ali Shokair'
               />
 
               <div className='bio mb-3'>
-                Hi, my name is Simon Doe and I&apos;m a senior software
-                engineer. Welcome to my personal website!
+                Hi, my name is Ali Shokair and I&apos;m a mid software engineer.
+                Welcome to my personal website & portfolio!
               </div>
               <ul className='social-list list-inline py-2 mx-auto'>
                 <li className='list-inline-item'>
-                  <a href='#'>
-                    <FaTwitter />
-                  </a>
-                </li>
-                <li className='list-inline-item'>
-                  <a href='#'>
+                  <a
+                    href='https://www.linkedin.com/in/alishkeir/'
+                    target='_blank'
+                    rel='noreferrer'
+                  >
                     <FaLinkedinIn />
                   </a>
                 </li>
                 <li className='list-inline-item'>
-                  <a href='#'>
+                  <a
+                    href='https://github.com/alishkeir/'
+                    target='_blank'
+                    rel='noreferrer'
+                  >
                     <FaGithub />
                   </a>
                 </li>
                 <li className='list-inline-item'>
-                  <a href='#'>
-                    <FaStackOverflow />
+                  <a
+                    href='https://www.instagram.com/alishkeir_'
+                    target='_blank'
+                    rel='noreferrer'
+                  >
+                    <FaInstagram />
                   </a>
                 </li>
                 <li className='list-inline-item'>
-                  <a href='#'>
+                  <a
+                    href='https://codepen.io/alishkeir/'
+                    target='_blank'
+                    rel='noreferrer'
+                  >
                     <FaCodepen />
+                  </a>
+                </li>
+                <li className='list-inline-item'>
+                  <a href='mailto:alishkeir_@hotmail.com'>
+                    <FaEnvelope />
                   </a>
                 </li>
               </ul>
@@ -80,41 +120,60 @@ const Header = () => {
 
             <ul className='navbar-nav flex-column text-start'>
               <li className='nav-item'>
-                <a className='nav-link active' href='index.html'>
+                <NavLink activeclassname='active' className='nav-link' to='/'>
                   <FaUser className='me-2' />
                   About Me
-                  {/* <span className='sr-only'>(current)</span> */}
-                </a>
+                </NavLink>
               </li>
+
               <li className='nav-item'>
-                <a className='nav-link' href='portfolio.html'>
+                <NavLink
+                  activeclassname='active'
+                  className='nav-link'
+                  to='/portfolio'
+                >
                   <FaLaptopCode className='me-2' />
                   Portfolio
-                </a>
+                </NavLink>
               </li>
-              <li className='nav-item'>
+
+              {/* <li className='nav-item'>
                 <a className='nav-link' href='services.html'>
                   <FaBriefcase className='me-2' />
                   Services &amp; Pricing
                 </a>
-              </li>
+              </li> */}
               <li className='nav-item'>
-                <a className='nav-link' href='resume.html'>
+                <NavLink
+                  activeclassname='active'
+                  className='nav-link'
+                  to='/resume'
+                >
                   <FaFileLines className='me-2' />
                   Resume
-                </a>
+                </NavLink>
               </li>
+
               <li className='nav-item'>
-                <a className='nav-link' href='blog-home.html'>
+                <NavLink
+                  activeclassname='active'
+                  className='nav-link'
+                  to='/blog'
+                >
                   <FaBlog className='me-2' />
                   Blog
-                </a>
+                </NavLink>
               </li>
+
               <li className='nav-item'>
-                <a className='nav-link' href='contact.html'>
+                <NavLink
+                  activeclassname='active'
+                  className='nav-link'
+                  to='/contact'
+                >
                   <FaEnvelopeOpenText className='me-2' />
                   Contact
-                </a>
+                </NavLink>
               </li>
             </ul>
 
@@ -137,7 +196,13 @@ const Header = () => {
                 Dark Mode
               </h4>
 
-              <input className='toggle' id='darkmode' type='checkbox' />
+              <input
+                className='toggle'
+                id='darkmode'
+                type='checkbox'
+                onChange={toggleTheme}
+                checked={darkMode}
+              />
               <label
                 className='toggle-btn mx-auto mb-0'
                 htmlFor='darkmode'
