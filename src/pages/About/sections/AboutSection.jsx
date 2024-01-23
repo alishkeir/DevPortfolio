@@ -1,7 +1,9 @@
 import { FaFileLines, FaCircleRight } from 'react-icons/fa6';
+import { PropTypes } from 'prop-types';
+
 import { Link } from 'react-router-dom';
 
-const AboutSection = () => {
+const AboutSection = ({ bio }) => {
   return (
     <section className='about-me-section p-3 p-lg-5 theme-bg-light'>
       <div className='container'>
@@ -9,14 +11,7 @@ const AboutSection = () => {
           <div className='col'>
             <h2 className='name font-weight-bold mb-1'>Ali Shokair</h2>
             <div className='tagline mb-3'>Software Engineer</div>
-            <div className='bio mb-4'>
-              I specialize in both frontend and backend development for
-              intricate and scalable web applications. My expertise lies in
-              software engineering, and I share insights on software development
-              through my blog. Curious about how I can contribute to your
-              project? Feel free to explore my project portfolio and online
-              resume for more details.
-            </div>
+            <div className='bio mb-4'>{bio}</div>
             <div className='d-flex'>
               <Link
                 to='portfolio'
@@ -47,6 +42,10 @@ const AboutSection = () => {
       </div>
     </section>
   );
+};
+
+AboutSection.propTypes = {
+  bio: PropTypes.string.isRequired,
 };
 
 export default AboutSection;

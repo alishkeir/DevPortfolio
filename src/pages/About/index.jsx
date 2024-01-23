@@ -6,14 +6,16 @@ import FeaturedSection from '@pages/About/sections/FeaturedSection';
 import Separator from '@components/Separator';
 // import { useState } from 'react';
 
+import info from '@db/info.json';
+
 const AboutPage = () => {
   // const [] = useState([]);
 
   return (
     <>
-      <AboutSection />
+      <AboutSection bio={info.bio} />
 
-      <OverviewSection />
+      <OverviewSection services_headline={info.services_headline} />
 
       <Separator />
 

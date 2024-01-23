@@ -1,0 +1,94 @@
+{
+  "heading": "As a highly skilled software engineer with extensive experience in MERN and LAMP Stacks, I am well-versed in developing and delivering high-quality solutions in a fast-paced and dynamic environment. I have a track record of success in web and mobile app development, and I am committed to staying up-to-date with the latest technologies and industry trends.",
+  "experience": [
+    {
+      "title": "Web Developer",
+      "company": "PAJ GPS",
+      "date": "Jan 2024 - Present",
+      "tasks": [
+        "Improve website performance by optimizing images, scripts, and other assets.",
+        "Debug and resolve bugs to maintain high software quality.",
+        "Create and refine UI elements to ensure a seamless user experience.",
+        "Implement new features and functionalities in WordPress projects.",
+        "Utilize agile methodologies for efficient project management and progress tracking.",
+        "Conduct SEO audits and implement on-page optimization strategies.",
+        "Enhance website security by implementing best practices and security measures.",
+        "Customize and extend WordPress functionalities through custom themes and plugins."
+      ]
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Diagonal Magnética Lda",
+      "date": "May 2023 - Aug 2023",
+      "tasks": [
+        "Developing and maintaining web applications using Vue.js, Laravel and MongoDB.",
+        "Implementing responsive user interfaces and user experiences (UI/UX).",
+        "Building scalable and modular front-end architecture with Vue.js and Vuex state management.",
+        "Participating in agile development methodologies to efficiently manage projects and track progress.",
+        "Testing and debugging software applications to identify and resolve bugs.",
+        "Handling the entire software development cycle, from idea to deployment and ongoing maintenance.",
+        "Conducting continuous learning and staying updated on industry best practices and emerging technologies.",
+        "Demonstrating commitment to delivering high-quality software solutions."
+      ]
+    },
+    {
+      "title": "Software Engineer",
+      "company": "ITXI",
+      "date": "Jun 2021 - Jun 2023",
+      "tasks": [
+        "Producing, maintaining, and modifying websites and user interfaces for optimal user experience.",
+        "Writing website code with JavaScript and PHP for efficient, scalable code.",
+        "Creating and upkeeping web applications with React, Angular, Node.js, MySQL and Firebase.",
+        "Optimizing web design for smartphones with responsive, mobile-friendly pages.",
+        "Optimizing web pages for maximum speed and scalability with advanced techniques.",
+        "Mentoring and training less experienced developers for their professional growth.",
+        "Integrating third-party APIs and libraries seamlessly to enhance functionality.",
+        "Implementing secure authentication and authorization mechanisms for web applications."
+      ]
+    },
+    {
+      "title": "Full Stack Developer Trainee (Bootcamp)",
+      "company": "Codi_Tech",
+      "date": "Sep 2020 - Apr 2021",
+      "tasks": [
+        "Frontend Development (HTML5, CSS3, JavaScript, React, Bootstrap, SCSS).",
+        "Backend Development (NodeJS, PHP, Laravel).",
+        "Mobile Development (React Native).",
+        "Database (MySQL, MongoDB).",
+        "Version Control (Git, GitHub).",
+        "Project Management (AGILE Methodologies).",
+        "Content Management System (WordPress).",
+        "Server Management (Arch Linux, Ubuntu, Apache)."
+      ]
+    }
+  ],
+  "skills": {
+    "technical": [
+      "HTML5 / CSS3 / SASS",
+      "JavaScript / Angular / React / Vue / Svelte",
+      "Node / Express / Nest",
+      "PHP / Laravel / WordPress",
+      "MySQL / PostgreSQL / MongoDB / Firebase",
+      "Git / GitHub / GitLab",
+      "Unreal Engine / C++"
+    ],
+    "professional": [
+      "Problem Solving",
+      "Time Management",
+      "Project Management",
+      "Creativity",
+      "Teamwork",
+      "Leadership"
+    ]
+  },
+  "certificates": ["Full Stack Developer Certification"],
+  "languages": ["Arabic (Native)", "English (Fluent)"],
+  "interests": [
+    "Video Games",
+    "Reading",
+    "Music",
+    "Podcasts",
+    "Travelling",
+    "Photography"
+  ]
+}

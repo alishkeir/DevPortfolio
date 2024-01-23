@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import {
-  FaBlog,
+  // FaBlog,
   FaCodepen,
   FaEnvelope,
-  FaEnvelopeOpenText,
+  // FaEnvelopeOpenText,
   FaFileLines,
   FaGithub,
   FaInstagram,
@@ -154,7 +154,7 @@ const Header = () => {
                 </NavLink>
               </li>
 
-              <li className='nav-item'>
+              {/* <li className='nav-item'>
                 <NavLink
                   activeclassname='active'
                   className='nav-link'
@@ -174,7 +174,7 @@ const Header = () => {
                   <FaEnvelopeOpenText className='me-2' />
                   Contact
                 </NavLink>
-              </li>
+              </li> */}
             </ul>
 
             {/* <div className='mb-2 mt-4'>

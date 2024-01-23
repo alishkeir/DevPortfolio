@@ -9,6 +9,7 @@ export default defineConfig({
       '@pages': '/src/pages',
       '@assets': '/src/assets',
       '@db': '/src/_db',
+      '@context': '/src/context',
     },
   },
   plugins: [react()],

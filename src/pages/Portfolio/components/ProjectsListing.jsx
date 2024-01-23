@@ -2,7 +2,6 @@ import ProjectCard from '@components/ProjectCard';
 import { projects } from '@db/about.json';
 
 const ProjectsListing = () => {
-  console.log(projects);
   return (
     <div className='project-cards row isotope'>
       {projects &&

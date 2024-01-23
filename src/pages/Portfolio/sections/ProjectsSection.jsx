@@ -20,7 +20,6 @@ const ProjectsSection = () => {
     filterItems.forEach((filterItem) => {
       filterItem.addEventListener('click', () => {
         let filterValue = filterItem.getAttribute('data-filter');
-        console.log(filterValue);
 
         // arrange - https://isotope.metafizzy.co/methods.html
         iso.arrange({ filter: filterValue });
