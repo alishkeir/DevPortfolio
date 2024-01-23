@@ -24,12 +24,12 @@ const Filter = () => {
 
   return (
     <div className='text-center'>
-      <ul id='filters' className='filters mb-5 mx-auto   ps-0'>
+      <ul id='filters' className='filters mb-5 mx-auto ps-0'>
         {tags &&
           tags.map((tag) => (
             <li
               key={tag.tag}
-              className='type mb-3 mb-lg-0'
+              className={`type mb-3 mb-lg-0 ${tag.tag == '*' && 'active'}`}
               data-filter={tag.tag}
             >
               {tag.name}
