@@ -73,7 +73,7 @@
       "featured": true,
       "github": "https://github.com/alishkeir/TaskManagerFrontend",
       "demo": "https://task-manager-alishkeir.netlify.app/",
-      "type": "frontend"
+      "type": "fullstack"
     },
     {
       "title": "QR Code Generator",

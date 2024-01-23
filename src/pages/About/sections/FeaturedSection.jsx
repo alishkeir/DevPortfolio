@@ -1,4 +1,6 @@
 import FeaturedProjectsListing from '@pages/About/components/FeaturedProjects';
+import { FaCircleRight } from 'react-icons/fa6';
+import { Link } from 'react-router-dom';
 
 const FeaturedSection = () => {
   return (
@@ -11,9 +13,10 @@ const FeaturedSection = () => {
           <FeaturedProjectsListing />
         </div>
         <div className='text-center py-3'>
-          <a href='portfolio.html' className='btn btn-primary'>
-            <i className='fas fa-arrow-alt-circle-right me-2'></i>View Portfolio
-          </a>
+          <Link to='portfolio' className='btn btn-primary'>
+            <FaCircleRight className='me-2' />
+            View Portfolio
+          </Link>
         </div>
       </div>
     </section>

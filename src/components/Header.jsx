@@ -9,11 +9,11 @@ import {
   FaInstagram,
   FaLaptopCode,
   FaLinkedinIn,
-  FaPaperPlane,
+  // FaPaperPlane,
   FaSun,
   FaUser,
 } from 'react-icons/fa6';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Header = () => {
   const [darkMode, setDarkMode] = useState(
@@ -43,9 +43,9 @@ const Header = () => {
     <header className='header text-center'>
       <div className='force-overflow'>
         <h1 className='blog-name pt-lg-4 mb-0'>
-          <a className='no-text-decoration' href='index.html'>
+          <Link className='no-text-decoration' to='/'>
             Ali Shokair
-          </a>
+          </Link>
         </h1>
 
         <nav className='navbar navbar-expand-lg navbar-dark'>
@@ -177,7 +177,7 @@ const Header = () => {
               </li>
             </ul>
 
-            <div className='mb-2 mt-4'>
+            {/* <div className='mb-2 mt-4'>
               <a
                 className='btn btn-primary'
                 href='contact.html'
@@ -187,7 +187,7 @@ const Header = () => {
                 <FaPaperPlane className='me-2' />
                 Hire Me
               </a>
-            </div>
+            </div> */}
 
             <div className='dark-mode-toggle text-center w-100'>
               <h4 className='toggle-name mb-3 mt-4 '>
